@@ -1,14 +1,13 @@
-# Use Java 17
 FROM eclipse-temurin:17-jdk
 
-# Set working directory
 WORKDIR /app
 
-# Copy project files
-COPY . .
+# Copy ONLY backend folder
+COPY trendly-backend /app
 
 # Build jar
+RUN chmod +x mvnw || true
 RUN ./mvnw clean package -DskipTests || mvn clean package -DskipTests
 
 # Run app
-CMD ["java", "-jar", "target/*.jar"]
+CMD ["sh", "-c", "java -jar target/*.jar"]
