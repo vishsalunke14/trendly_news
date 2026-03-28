@@ -1,4 +1,5 @@
-const API_BASE_URL = "http://localhost:8080";
+// const API_BASE_URL = "http://localhost:8080";
+const API_BASE_URL = "https://trendly-news-2.onrender.com";
 
 export async function apiPost(path, body) {
   const res = await fetch(`${API_BASE_URL}${path}`, {
