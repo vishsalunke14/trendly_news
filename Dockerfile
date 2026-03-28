@@ -10,4 +10,4 @@ COPY trendly-backend /app
 RUN mvn clean package -DskipTests
 
 # Run app
-CMD ["java", "-jar", "target/*.jar"]
+CMD ["sh", "-c", "java -jar target/*.jar"]
