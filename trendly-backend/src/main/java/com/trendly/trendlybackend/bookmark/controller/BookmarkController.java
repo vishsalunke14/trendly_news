@@ -12,7 +12,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/bookmarks") //  matches frontend path
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:5173") //  allow React app
+// @CrossOrigin(origins = "http://localhost:5173") //  allow React app
 public class BookmarkController {
 
     private final BookmarkService bookmarkService;

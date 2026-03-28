@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/api/likes") // 👈 base path
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:5173") // 👈 allow your React app
+// @CrossOrigin(origins = "http://localhost:5173") // 👈 allow your React app
 public class LikeController {
 
     private final LikeService likeService;

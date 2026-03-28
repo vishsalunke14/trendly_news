@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/api/admin/analytics")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:5173")
+// @CrossOrigin(origins = "http://localhost:5173")
 public class AdminAnalyticsController {
 
     private final AdminAnalyticsService adminAnalyticsService;
